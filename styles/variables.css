@@ -2,3 +2,10 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+/* Файл variables.css */
+:root {
+  --global-padding: 10px;
+  --text-size: 18px;
+  --font: "IBM Plex mono", "Courier New", Courier, monospace;
+  --back-color: #000028;
+}

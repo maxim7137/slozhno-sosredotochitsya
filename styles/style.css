@@ -2,4 +2,75 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  /* color: var(--accent-color); */
+  font-family: var(--font);
+  font-size: var(--text-size);
+  font-weight: normal;
+  padding: var(--global-padding);
+  background-color: var(--back-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.decorated-zone__element {
+  position: absolute;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  top: 1px;
+  right: 9px;
+  line-height: calc(25 / 18);
+}
+
+.decorated-zone__element::after {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px;
+}
+
+.header__theme-menu {
+}
+
+.header__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--focus-color);
+  text-shadow: 4px 4px 0;
+}
+
+@media (width >= 768px) {
+  .header__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+.title-decor {
+  font-weight: bold;
 }
