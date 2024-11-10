@@ -8,4 +8,12 @@
   --text-size: 18px;
   --font: "IBM Plex mono", "Courier New", Courier, monospace;
   --back-color: #000028;
+  --tittle-color: #db00ff;
+  --tittle-shadow: #ff0070;
+  --rec-color: #ff0070;
+  --corners-color: #ff0070;
+  --title-decor-bg: #ff0070;
+  --title-decor-text: #000028;
+  --button-color: #ff0070;
+  --button-hover-color: #32312d66;
 }

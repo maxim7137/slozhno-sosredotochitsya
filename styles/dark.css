@@ -2,12 +2,28 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --back-color: #000028;
+    --tittle-color: #db00ff;
+    --tittle-shadow: #ff0070;
+    --rec-color: #ff0070;
+    --corners-color: #ff0070;
+    --title-decor-bg: #ff0070;
+    --title-decor-text: #000028;
+    --button-color: #ff0070;
+    --button-hover-color: #32312d66;
   }
 }
 
 :root .theme_dark {
   /* Дублируем переменные для тёмной темы */
   --back-color: #000028;
+  --tittle-color: #db00ff;
+  --tittle-shadow: #ff0070;
+  --rec-color: #ff0070;
+  --corners-color: #ff0070;
+  --title-decor-bg: #ff0070;
+  --title-decor-text: #000028;
+  --button-color: #ff0070;
+  --button-hover-color: #32312d66;
 }
 
 /* Остальные стили */
