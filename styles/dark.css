@@ -10,6 +10,7 @@
     --title-decor-text: #000028;
     --button-color: #ff0070;
     --button-hover-color: #32312d66;
+    --bg-img: url(../images/cover-image-dark.png);
   }
 }
 
@@ -24,6 +25,7 @@
   --title-decor-text: #000028;
   --button-color: #ff0070;
   --button-hover-color: #32312d66;
+  --bg-img: url(../images/cover-image-dark.png);
 }
 
 /* Остальные стили */
