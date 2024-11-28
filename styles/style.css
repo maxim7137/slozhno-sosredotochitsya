@@ -180,7 +180,7 @@
 }
 
 .main {
-  padding: clamp(2.813rem, 3.817vw + 1.918rem, 3.75rem) var(--global-padding) 0;
+  padding: clamp(1.25rem, 10.178vw - 1.135rem, 3.75rem) var(--global-padding) 0;
 }
 
 .section {
