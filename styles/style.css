@@ -142,10 +142,20 @@
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-left: -10px;
+  }
+
+  .header__theme-menu-list {
+    padding-top: 0;
   }
 
   .header__text {
     width: 364px;
+    margin-bottom: 0;
+  }
+
+  .noheader {
+    grid-template-rows: 1fr auto 1fr;
   }
 }
 
@@ -180,7 +190,7 @@
 }
 
 .main {
-  padding: clamp(2.188rem, 6.361vw + 0.697rem, 3.75rem) var(--global-padding) 0;
+  padding: clamp(2.188rem, 1.272vw + 1.889rem, 2.5rem) var(--global-padding) 0;
 }
 
 .section {
