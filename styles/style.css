@@ -6,7 +6,6 @@
   font-family: var(--font);
   font-size: var(--text-size);
   font-weight: normal;
-  padding: var(--global-padding);
   background-color: var(--back-color);
   background-image: var(--bg-img);
   background-position: center;
@@ -22,6 +21,7 @@
 }
 
 .header {
+  margin: var(--global-padding);
   height: calc(100svh - 2 * var(--global-padding));
   min-height: 425px;
   display: grid;
@@ -176,7 +176,7 @@
 }
 
 .main {
-  padding-top: clamp(3.125rem, 2.545vw + 2.529rem, 3.75rem);
+  padding: clamp(3.125rem, 2.545vw + 2.529rem, 3.75rem) var(--global-padding) 0;
 }
 
 .section {
@@ -320,6 +320,7 @@
 /* footer */
 
 .footer {
+  margin: 0 var(--global-padding) var(--global-padding);
   height: calc(100lvh - 2 * var(--global-padding));
   min-height: 425px;
   display: flex;
