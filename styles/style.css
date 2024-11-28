@@ -83,6 +83,7 @@
   display: flex;
   flex-direction: column;
   gap: 14px 0;
+  padding-top: 5px;
 }
 
 .header__theme-menu-button {
@@ -130,6 +131,10 @@
   justify-self: start;
 }
 
+.header__text {
+  margin-bottom: 10px;
+}
+
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -171,7 +176,7 @@
 }
 
 .main {
-  padding-top: clamp(2.5rem, 5.089vw + 1.307rem, 3.75rem);
+  padding-top: clamp(3.125rem, 2.545vw + 2.529rem, 3.75rem);
 }
 
 .section {

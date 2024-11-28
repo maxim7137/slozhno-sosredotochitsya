@@ -4,6 +4,7 @@
     --bg-img: url(../images/cover-image-light.png);
     --back-color: #fff1f7;
     --tittle-color: #ffc2e6;
+    --tittle-shadow: #ff8dcb;
     --rec-color: transparent;
     --corners-color: #353430;
     --title-decor-bg: #ff8dcb;
@@ -20,6 +21,7 @@
   --bg-img: url(../images/cover-image-light.png);
   --back-color: #fff1f7;
   --tittle-color: #ffc2e6;
+  --tittle-shadow: #ff8dcb;
   --rec-color: transparent;
   --corners-color: #353430;
   --title-decor-bg: #ff8dcb;
