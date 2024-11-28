@@ -22,7 +22,8 @@
 
 .header {
   margin: var(--global-padding);
-  height: calc(100svh - 2 * var(--global-padding));
+  /* height: calc(100svh - 2 * var(--global-padding)); */
+  height: 100svh;
   min-height: 425px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -321,7 +322,8 @@
 
 .footer {
   margin: 0 var(--global-padding) calc(var(--global-padding) + 2px);
-  height: calc(100lvh - 2 * var(--global-padding));
+  /* height: calc(100lvh - 2 * var(--global-padding)); */
+  height: 100lvh;
   min-height: 425px;
   display: flex;
   justify-content: center;
