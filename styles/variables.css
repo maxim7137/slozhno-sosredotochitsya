@@ -6,6 +6,7 @@
 :root {
   --global-padding: 10px;
   --text-size: 18px;
+  --bg-img: url(../images/cover-image.png);
   --font: "IBM Plex mono", "Courier New", Courier, monospace;
   --back-color: #000028;
   --tittle-color: #db00ff;
@@ -16,5 +17,6 @@
   --title-decor-text: #000028;
   --button-color: #ff0070;
   --button-hover-color: #32312d66;
-  --bg-img: url(../images/cover-image.png);
+  --text-color: #f1b2ce;
+  --text-shadow: #ff0070;
 }

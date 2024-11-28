@@ -15,8 +15,15 @@
   background-size: cover;
 }
 
+@media (width >= 768px) {
+  :root {
+    --global-padding: 20px;
+  }
+}
+
 .header {
-  height: calc(100vb - 2 * var(--global-padding));
+  height: calc(100svh - 2 * var(--global-padding));
+  min-height: 425px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
@@ -152,4 +159,117 @@
   font-weight: bold;
   background-color: var(--title-decor-bg);
   color: var(--title-decor-text);
+}
+
+/* main */
+
+.main,
+.section__title,
+.section__subtitle {
+  font-size: var(--text-size);
+}
+
+.main {
+  padding-top: clamp(2.5rem, 5.089vw + 1.307rem, 3.75rem);
+}
+
+.section:not(:last-child) {
+  padding-bottom: 50px;
+}
+
+.section__title {
+  color: var(--button-color);
+  padding-bottom: 20px;
+}
+
+.section__subtitle {
+  margin-bottom: 10px;
+}
+
+.section__subtitle:not(:first-child) {
+  margin-top: 20px;
+}
+
+.section__p {
+  color: var(--text-color);
+  line-height: calc(23.4 / 18);
+}
+
+.section__link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--text-shadow);
+  position: relative;
+  display: inline-block;
+}
+
+.section__link::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  color: var(--text-color);
+  background-color: var(--text-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section__link:hover::after {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.section__link:focus-visible {
+  outline: 1px solid var(--text-color);
+}
+
+.section_wide .section__text {
+  display: grid;
+  gap: 20px;
+}
+
+.section__listitemtitle {
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+/* section media */
+
+@media (width >= 768px) {
+  .section {
+    display: grid;
+  }
+
+  .section:not(:last-child) {
+    padding-bottom: 80px;
+  }
+
+  .section_aside {
+    grid-template-columns: 0.987fr 2.013fr;
+    gap: 0 20px;
+  }
+
+  .section_wide .section__title {
+    display: grid;
+    grid-template-columns: 0.987fr 2.013fr;
+    gap: 0 20px;
+  }
+
+  /* .section_wide .section__text {
+    display: grid;
+    gap: 20px;
+  } */
+}
+
+@media (width >= 1024px) {
+  .section_aside {
+    grid-template-columns: 0.983fr 2.017fr;
+  }
+
+  .section_wide .section__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

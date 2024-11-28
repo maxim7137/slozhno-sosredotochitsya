@@ -1,6 +1,7 @@
 /* Дублируем переменные тёмной темы */
 @media (prefers-color-scheme: dark) {
   :root {
+    --bg-img: url(../images/cover-image-dark.png);
     --back-color: #000028;
     --tittle-color: #db00ff;
     --tittle-shadow: #ff0070;
@@ -10,12 +11,14 @@
     --title-decor-text: #000028;
     --button-color: #ff0070;
     --button-hover-color: #32312d66;
-    --bg-img: url(../images/cover-image-dark.png);
+    --text-color: #f1b2ce;
+    --text-shadow: #ff0070;
   }
 }
 
 :root .theme_dark {
   /* Дублируем переменные для тёмной темы */
+  --bg-img: url(../images/cover-image-dark.png);
   --back-color: #000028;
   --tittle-color: #db00ff;
   --tittle-shadow: #ff0070;
@@ -25,7 +28,8 @@
   --title-decor-text: #000028;
   --button-color: #ff0070;
   --button-hover-color: #32312d66;
-  --bg-img: url(../images/cover-image-dark.png);
+  --text-color: #f1b2ce;
+  --text-shadow: #ff0070;
 }
 
 /* Остальные стили */

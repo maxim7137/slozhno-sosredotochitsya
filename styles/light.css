@@ -1,6 +1,7 @@
 /* Дублируем переменные светлой темы */
 @media (prefers-color-scheme: light) {
   :root {
+    --bg-img: url(../images/cover-image-light.png);
     --back-color: #fff1f7;
     --tittle-color: #ffc2e6;
     --rec-color: transparent;
@@ -9,12 +10,14 @@
     --title-decor-text: #353430;
     --button-color: #353430;
     --button-hover-color: #ff007066;
-    --bg-img: url(../images/cover-image-light.png);
+    --text-color: #353430;
+    --text-shadow: #ff8dcb;
   }
 }
 
 :root .theme_light {
   /* Переменные светлой темы */
+  --bg-img: url(../images/cover-image-light.png);
   --back-color: #fff1f7;
   --tittle-color: #ffc2e6;
   --rec-color: transparent;
@@ -23,7 +26,8 @@
   --title-decor-text: #353430;
   --button-color: #353430;
   --button-hover-color: #ff007066;
-  --bg-img: url(../images/cover-image-light.png);
+  --text-color: #353430;
+  --text-shadow: #ff8dcb;
 }
 
 /* Остальные стили */
